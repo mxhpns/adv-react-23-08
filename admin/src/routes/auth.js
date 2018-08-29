@@ -34,8 +34,16 @@ class AuthRoute extends Component {
     )
   }
 
-  signInForm = () => <SignInForm />
-  signUpForm = () => <SignUpForm />
+  signInForm = () => <SignInForm onSubmit={this.handleSignIn} />
+  signUpForm = () => <SignUpForm onSubmit={this.handleSignUp} />
+
+  handleSignIn = ({ email, password }) => {
+    console.log('sign in', email, password)
+  }
+
+  handleSignUp = ({ email, password }) => {
+    console.log('sign up', email, password)
+  }
 }
 
 export default AuthRoute
