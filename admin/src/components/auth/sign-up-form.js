@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
-class AdminRoute extends Component {
+class SignUpForm extends Component {
   static propTypes = {}
 
   render() {
     return (
       <div>
-        <h2>Admin</h2>
+        <h3>Sign Up Form</h3>
       </div>
     )
   }
 }
 
-export default AdminRoute
+export default SignUpForm
